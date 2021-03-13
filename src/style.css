@@ -19,6 +19,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 nav {
@@ -31,6 +32,10 @@ ul {
     list-style: none;
     width: 500px;
     justify-content: space-around;
+}
+
+ul.show {
+    display: block;
 }
 
 li {
@@ -58,6 +63,10 @@ p {
     margin: 0px;
     font-size: 30px;
     font-weight: 100;
+}
+
+.foo-p {
+    margin-bottom: 15px;
 }
 
 .hero-area {
@@ -205,4 +214,43 @@ hr {
 
 li a:hover {
     color: grey;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        border: 0;
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #4a545f;
+    }
+
+    .logo {
+        display: none;
+    }
 }

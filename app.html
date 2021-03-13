@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 <body>
     <section class="hero">
         <nav>
             <img class="logo" src="src/images/logo.png" alt="">
-            <ul>
+            <ul id="nav-list">
                 <li><a class="link-dec" href="#about-me">About Me</a></li>
                 <li><a class="link-dec" href="#projects">Projects</a></li>
                 <li><a class="link-dec" href="#contacts">Contacts</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
         </nav>
         <div class="hero-area">
             <div class="hero-text">
@@ -93,7 +98,7 @@
     </section>
     <footer id="contacts">
         <h2>Contact Me</h2>
-        <p>shaileshsachan1997@gmail.com</p>
+        <p class="foo-p">shaileshsachan1997@gmail.com</p>
     </footer>
 
     <script src="src/app.js"></script>
