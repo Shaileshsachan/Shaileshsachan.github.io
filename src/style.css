@@ -1,9 +1,9 @@
 body {
     font-family: 'DotGothic16', sans-serif;
+    margin: 0px;
 }
 
 section {
-    height: 500px;
     background-color: white;
 }
 
@@ -11,15 +11,14 @@ section {
     background-color: #22232c;
     height: 100vh;
     color: white;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 footer {
-    height: 200px;
     background-color: black;
     color: white;
     text-align: center;
-    margin-bottom: 0px;
+    padding: 80px;
 }
 
 nav {
@@ -29,9 +28,10 @@ nav {
 
 ul {
     display: flex;
-    list-style: none;
+    list-style-type: none;
     width: 500px;
     justify-content: space-around;
+    font-size: 30px;
 }
 
 ul.show {
@@ -39,7 +39,6 @@ ul.show {
 }
 
 li {
-    /* width: 200px; */
     text-decoration: none;
 }
 
@@ -50,7 +49,7 @@ h1 {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 h3 {
@@ -208,6 +207,11 @@ hr {
 }
 
 .link-dec {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+.link-dec-x {
     text-decoration: none;
     color: coral;
 }
